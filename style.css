@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+ /* margin-left: 5%;
+ margin-right:5%; */
+ font-family: "Josefin Sans", sans-serif;
+
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+html{
+  font-size: 10px;
+}
+header{
+  width:100%;
+  height: 500px;
+
+}
+ header nav {
+   width:100%;
+   height: 150px;
+
+ }
+ header form{
+  width: 84%;
+ margin: 0 auto;
+ clear: both;
+ text-align: center;
+ margin-bottom:10px;
+ }
+ .yelpBoston{
+   width:100%;
+   height:100px;
+
+ }
+.mainSection{
+  width:70%;
+  height:auto;
+  /* margin-left:15%; */
+  /* float: left; */
+  margin: 0 15%;
+  /* background-color: orange; */
+}
+
+.mainSection > section{
+  float:left;
+  width:25%;
+  margin-left: 7%;
+}
+/* .mainSection >section{
+  width: 33%;
+  height:170px;
+  border:2px solid red;
+  float:left;
+} */
+
+footer {
+  height: 72%;
+  width: 100%;
+  margin-top: 4rem;
+  background-color: rgb(242 242 242);
+  float: left;
+}
+
+
+.footerNav section {
+border: 2px solid white;
+height: 10rem;
+width: 18%;
+float: left;
+margin-left: 8rem;
+background-color: white;
+}
+
+.footerNav img {
+width: 63%;
+margin-left: 4rem;
+margin-top: 2rem;
+
+}
+.footerNav ul a {
+color: black;
+padding-left: 1rem;
+}
+header{
+  background: url("yelppics/food3.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navLeft,
+.navRight {
+
+  /* width:20%; */
+}
+
+.floatLeft{
+  float:left;
+}
+.floatRight {
+  float:right;
+}
+nav ul li a {
+  text-decoration:none;
+  color:white;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+.navRight li{
+  margin-left:7px;
+}
+
+nav ul li{
+  display:inline-block;
+  margin-left: 16px;
+}
+.button{
+  border:2px solid white;
+  border-radius: 2px;
+
+}
+label{
+  font-size: 1.4rem;
+    margin: auto 0;
+    display: inline-block;
+    background-color: white;
+    padding: 4px 3px;
+    margin-right: -13px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    margin-left: 1%;
+}
+input{
+  width: 30%;
+padding: 3px;
+margin: auto 0;
+margin-left: 1%
+}
+.yelpLogo img{
+  margin-left: 38%;
+}
+fieldset .fas{
+  font-size: 1.5rem;
+    background-color: red;
+    height: 25px;
+    padding: 4px;
+    margin-top: 2px;
+    color: white;
+    padding-right: 1%;
+}
+.underForm{
+  text-align: center;
+}
+.underForm a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color:white;
+  margin: auto 0;
+}
+
+.underForm li{
+  display: inline-block;
+  margin: auto 0;
+  padding-left:3%;
+
+}
+.photoBy{
+  text-align: center;
+  padding:62px;
+  color:white;
+  font-size: 1.2rem;
+}
+.yelpBoston{
+  text-align: center;
+  color:#d32323;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.yelpBoston li{
+  display: inline-block;
+  color:black;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.secondPage {
+
+  width: 73%;
+  font-size: 1.3rem;
+  /* border:1px solid black; */
+  margin-left: 1%;
+}
+
+.secondPage img{
+  width: fit-content;
+}
+
+.secondPage li{
+  display: inline-block;
+  color:orange;
+  padding-top:15px;
+}
+.secondPage h2 {
+  color:blue;
+  font-size: 1.5rem;
+  padding-top: 15px;
+}
+.secondPage h4{
+  color: orange;
+}
+.mobileOnly{
+  display:none;
+}
+/* Mobile */
+@media only screen and (max-width:767px){
+  .mobileHide{
+    display: none;
+  }
+  .mobileOnly{
+    display:inline-block;
+    margin-top: 6px;
+    margin-left: 8%;
+  }
+  .navRight li{
+    margin-top:6px;
+  }
+  .yelpLogo img{
+    margin-left:25%;
+  }
+  label{
+    font-size: 1.4rem;
+    margin: auto 0;
+    display: inline-block;
+    background-color: white;
+    padding: 4px 3px;
+    margin-right: -9px;
+    padding-bottom: 5px;
+    padding-left: 5px
+  }
+  .underForm a{
+    font-size: 1.2rem
+  }
+  .footerNav ul{
+    text-align: center;
+  }
+  nav ul li{
+    margin:0;
+  }
+  .footerNav img{
+    width:115%;
+    margin:0;
+  }
+  .footerNav section{
+    margin:0;
+    height:auto;
+  width:100%;
+  float:none;
+  }
+}
+/* Tablet */
+@media only screen and (min-width:768px) and (max-width:1024px){
+  .mainSection > section{
+    width:31%;
+    margin-left: 19%;
+  }
+  .mainSection{
+    width:70%;
+    margin:0 10%;
+  }
+  .underForm a{
+    font-size: 1.8rem;
+  }
+
+  nav ul li a{
+    font-size: 1.6rem;
+  }
+  .secondPage h2{
+    font-size: 3.5rem;
+  }
+  .secondPage h3{
+    font-size: 2.5rem;
+  }
+  .secondPage{
+    margin-bottom: 18px;
+  }
+  .yelpBoston h2{
+    font-size: 2.5rem;
+  }
+  .footerNav img{
+    margin:0;
+    width:100%;
+  }
+  footer{
+    background-color: none;
+  }
+  .footerNav section{
+    width: 25%;
+    margin:0;
+    height:auto;
+  }
+  .tabletHide{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:1024px){
+  .footerNav img{
+    width:84%;
+  }
+  footer{
+    width:100%;
+  }
+  .mainSection{
+    width:84%;
+    margin:0 10%;
+  }
+  .footerNav section{
+    width:25%;
+    margin:0;
+  }
+}
